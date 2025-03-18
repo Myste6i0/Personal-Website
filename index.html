@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterio Portfolio website</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contactid">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi, I'm <span>Mysterio</span><br> "Life is too easy<br> to be like  normal,<br> stay extra ordinary"</h1>
+                <a href="#portfolio" class="cta-button">Explore More</a>
+
+            </div>           
+            
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title" >About Me</h1>
+                    <img src="images/user.jpg" alt="">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces in HTML,CSS and JS</li>
+                            <li><span>Web Development</span><br>Web app Development using PHP</li>
+                            <li><span>Internet Of Things</span><br>Building IOT projects using Arduino</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Working as a CSE in a reputed NBFC</li>
+                            <li><span>2023 - 2024</span><br>Team lead at IEDC CLUB (Innovation and Entrepreneurship Development Centers) of Sree Sabareesa College</li>
+                            <li><span>2023 - 2024</span><br>Internship in Meachine Learning Project at ICT ACADEMY OF KERALA </li>
+                            <li><span>2016 - 2017</span><br>Internship in PHP web application at FAITH INFOSOFT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2024</span><br>Bachelor of Computer Applications<br>Sree Sabareesa College, Murikkumvayal</li>
+                            <li><span>2019 - 2021</span><br>Higher Secondary Examination<br>St Thomas Higher Secondary School,Erumeli</li>
+                            <li><span>2018 - 2019</span><br>Board of Examination(SSLC) <br>St Joseph's High School Koovapally</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-col-2" style="font-size: larger;">
+                    <!-- <h1 class="sub-title" >About Me</h1> -->
+                    <p><br><br>Hello, I am Mysterio. Just forget what I have said before.I am Ajith T.G, a tech enthusiast on the journey of reaching the next level in my life. Currently, I am working as a Customer Service Executive (CSE) in a reputed NBFC. I know it might sound unconventional, but I understand the reason behind this choice. This job serves as a foundation for me, allowing me to support myself while I continue to pursue my true passion for technology. I know exactly what I'm doing and why I'm doing it, and I’m focused on building my future step by step.<br><br>
+
+                        I am a graduate in Computer Applications, and throughout my academic journey, I’ve developed a strong passion for technology. Over the years, I’ve enhanced my skills in areas such as JavaScript programming, Ethical Hacking, and Machine Learning, all of which have helped me successfully complete several key projects.<br><br>
+                        
+                        One of the highlights of my college years was serving as a resource person at Kristhu Jyothi College of Management and Technology, where I led a seminar on "Cyber Security Awareness"<a href="seminar/seemore.html" target="_blank"><i class="fa-solid fa-link"></i></a>. It was a rewarding experience, helping students and faculty understand the importance of cybersecurity in our increasingly connected world.<br><br>
+                        
+                        Additionally, I have a keen interest in the Internet of Things (IoT), which led me to develop an Automated Indoor Plant Grow Pot project. This IoT-based solution simplified plant care by automating the process, showcasing how technology can be applied to everyday challenges.<br><br>
+                        
+                        Throughout my studies, I worked on several notable projects, including an Online Food Hub—a PHP-based web application that made food ordering from a single restaurant seamless. For my final year project, I developed a Machine Learning model to predict hotel booking cancellations, helping hotels optimize resources and improve customer satisfaction.<br><br>
+                        
+                        As I continue to grow in my career, I remain committed to using my skills and knowledge to create innovative solutions. Technology has the power to transform the world, and I am excited to contribute to that transformation.
+                    </p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <!-- ------------Portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Achievements And Events</h1>
+            
+            
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/event1.JPG">
+                    <div class="layer">
+                        <h3>Seminar</h3>
+                        <p>I led a seminar on “Cyber Security Awareness” at Kristu Jyothi College of 
+                            Management and Technology in Changanassery. The session focused on identifying 
+                            threats, safe internet practices, and data protection, benefiting both students and teachers.</p>
+                        <a href="seminar/index.html" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/event2.jpg">
+                    <div class="layer">
+                        <h3>College Stall</h3>
+                        <p>At the Ente Keralam Exhibition in Kottayam, celebrating the 
+                            Pinarayi Vijayan government's anniversary, our college showcases 
+                            our achievements, including my IoT project, the Automated Plant 
+                            Cultivation System, which attracts much interest. Visit to explore more.</p>
+                        <a href="clgstall/index.html" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/event3.jpg">
+                    <div class="layer">
+                        <h3>My First Web Site</h3>
+                        <p>Have a look at my first personal portfolio website and how much I have improved from that.</p>
+                        <a href="https://myste6i0.github.io/Mysterio-Personal-Website/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    
+
+    <!-- ------------Services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="services-list">
+
+                
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>IoT</h2>
+                    <p>The Automated Plant Cultivation System is an IoT prototype designed to optimize 
+                        plant care by automatically maintaining soil moisture and light intensity. 
+                        Using an Arduino module, it ensures plants receive the right amount of water 
+                        and light. Real-time data is transmitted via an ESP32 WiFi module and can be 
+                        monitored through a PHP website, allowing users to track conditions 
+                        remotely without controlling the system.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>PHP Web App</h2>
+                    <p>Online FoodHub is a robust PHP web application designed to streamline the food 
+                        ordering process. Users can browse a comprehensive menu from a single restaurant, 
+                        select their desired food items, and place orders effortlessly. The platform ensures that each order is processed efficiently and delivered promptly to the user's specified location, providing 
+                        a convenient and reliable dining experience from the comfort of their home.
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Machine learning</h2>
+                    <p>The Hotel Booking Cancellation Prediction project uses data science 
+                        and machine learning to forecast cancellations and improve revenue management. 
+                        Analyzing key features from a detailed dataset, the project trains various models, 
+                        with the Random Forest Classifier being highly accurate. It includes a Flask-based 
+                        web interface, offering stakeholders actionable insights and an easy tool for managing cancellations.
+                    </p>
+                    <a href="https://github.com/Myste6i0/Hotel-Booking-Cancel-Prediction-Machine-learning-project-">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------contact----------------------- -->
+    <div id="contactid" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title contactme">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> mysterioajith@gmail.com</p>
+                    <!-- <p><i class="fas fa-phone-square-alt"></i> </p> -->
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1BPSkdPeTj/?mibextid=qi2Omg"><i class="fab fa-facebook"></i></a>
+                        <!-- <a href="#"><i class="fab fa-twitter-square"></i></a> -->
+                        <a href="https://www.instagram.com/_myste.6i0__/"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+                    </div>
+                    <a href="images/mycv.jpg" download class="btn btn2 down">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="submit-form" action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        
+                        <input type="email" name="email" placeholder="Your Email" required>
+
+                        <input type="number" name="color" placeholder="Your Mobile Phone Number" required>
+
+                        <textarea name="message" id="" rows="6" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Mysterio. All right reseved <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzeX7KyIZXKPUnXogN51osIQjgM5PJD9RKfED9YB5HLefTs8XkTyo_XdvU6TYpe4z9u5Q/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname){
+            for(var tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(var tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        // Get the modal and elements
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("learnMoreLink");
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the "Learn more" link, open the modal
+        btn.onclick = function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

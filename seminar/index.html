@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterio Portfolio Website</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080808;
+            color: #fff;
+        }
+
+        .container {
+            padding: 10px 10%;
+        }
+
+        #about {
+            padding: 80px 0;
+            color: #ababab;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: large;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .about-col-1, .about-col-2 {
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        .about-col-1 {
+            flex-basis: 35%;
+            animation-delay: 0.3s;
+        }
+
+        .about-col-1 img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .about-col-1 img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .about-col-2 {
+            flex-basis: 60%;
+            animation-delay: 0.6s;
+        }
+
+        .about-col-2 p {
+            font-size: large;
+            font-family: cursive;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out forwards;
+            animation-delay: 0.6s;
+            line-height: 1.8;
+        }
+
+        .about-col-2 p strong {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1em;
+            color: #f0f0f0;
+        }
+
+        .sub-title {
+            padding-bottom: 30px;
+            text-align: center;
+            font-size: 2.5rem;
+            animation: fadeInTitle 1.5s ease-in-out;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInTitle {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-col-1, .about-col-2 {
+                flex-basis: 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .about-col-1 img {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">Seminar on Cyber Security Awareness</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/semimg1.jpeg" alt="About Me Image">
+                </div>
+                <div class="about-col-2">
+                    <p>
+                        <strong>An Opportunity to Lead and Share </strong><br>
+                        One of the most significant highlights of my college years was the opportunity to lead a seminar on "Cyber Security Awareness" at Kristhu Jyothi College of Management and Technology. Serving as a resource person for this event was an enriching and memorable experience. It gave me a platform to share valuable insights with students and faculty while emphasizing the growing importance of cybersecurity in our interconnected digital age.
+                    </p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="about-col-2">
+                    <p>
+                        <strong>Highlighting the Need for Cybersecurity </strong><br>
+                        The seminar was focused on creating awareness about the critical need for cybersecurity in today’s world, where almost every aspect of our lives is intertwined with technology. From personal data protection to safeguarding organizational networks, the session highlighted the potential risks that come with the convenience of being connected. My goal was to help attendees recognize these risks and understand the importance of staying vigilant.   
+                    </p>
+                </div><br><br>
+                <div class="about-col-1">
+                    <img src="images/semimg2.JPG" alt="About Me Image">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/semimg3.jpeg" alt="About Me Image">
+                </div>
+                <div class="about-col-2">
+                    <p>
+                        <strong>Understanding the Phases of Ethical Hacking </strong><br>
+                        A key aspect of the seminar was an overview of the five phases of ethical hacking. These phases include reconnaissance, scanning, gaining access, maintaining access, and clearing tracks. Each step was explained to demonstrate how ethical hackers work systematically to identify vulnerabilities in a system, simulating real-world cyberattacks to strengthen defenses. This segment offered the audience a better understanding of how cybersecurity experts think and operate.
+                    </p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="about-col-2">
+                    <p>
+                        <strong> Exploring Different Types of Cyberattacks</strong> <br>
+                        In addition to ethical hacking, the seminar also shed light on various types of cyberattacks that individuals and organizations face today. Attendees learned about malware, phishing, password attacks, DDoS (Distributed Denial of Service) attacks, man-in-the-middle attacks, drive-by downloads, malvertising, and rogue software. Each type of attack was illustrated with examples, helping participants grasp their potential impact and the importance of adopting preventive measures.
+                    </p>
+                </div><br><br>
+                <div class="about-col-1">
+                    <img src="images/semimg4.JPG" alt="About Me Image">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/semimg5.jpg" alt="About Me Image">
+                </div>
+                <div class="about-col-2">
+                    <p>
+                        <strong>Engagement and Impact </strong><br>
+                        The seminar was well-received by the audience, with active participation and meaningful discussions throughout the session. Attendees were particularly engaged during the interactive segments, where we analyzed examples of phishing emails and explored ways to identify and avoid them. The positive feedback from both students and faculty reinforced the value of the session and highlighted the importance of promoting cybersecurity awareness.    
+                    </p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="about-col-2">
+                    <p>
+                        <strong>A Rewarding Experience</strong> <br>
+                        Leading this seminar was a deeply rewarding experience for me. It not only allowed me to share knowledge but also strengthened my resolve to contribute to the field of technology in meaningful ways. The event stands as a testament to my commitment to innovation and societal betterment, serving as a cornerstone in my journey toward making a difference in the world of cybersecurity.    
+                    </p>
+                </div><br><br>
+                <div class="about-col-1">
+                    <img src="images/semimg6.jpg" alt="About Me Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- 
+<div class="row">
+    <div class="about-col-1">
+        
+        <img src="images/semimg1.jpeg" alt="About Me Image">
+    </div>
+    <div class="about-col-2">
+        <p>
+            <strong>An Opportunity to Lead and Share </strong><br>
+            One of the most significant highlights of my college years was the opportunity to lead a seminar on "Cyber Security Awareness" at Kristhu Jyothi College of Management and Technology. Serving as a resource person for this event was an enriching and memorable experience. It gave me a platform to share valuable insights with students and faculty while emphasizing the growing importance of cybersecurity in our interconnected digital age.    
+        </p>
+    </div>
+</div>
+<div class="row">
+    
+    <div class="about-col-2">
+        <p>
+            <strong> Highlighting the Need for Cybersecurity </strong><br>
+            The seminar was focused on creating awareness about the critical need for cybersecurity in today’s world, where almost every aspect of our lives is intertwined with technology. From personal data protection to safeguarding organizational networks, the session highlighted the potential risks that come with the convenience of being connected. My goal was to help attendees recognize these risks and understand the importance of staying vigilant.   
+        </p>
+    </div>
+    <div class="about-col-1">
+        
+        <img src="images/semimg2.JPG" alt="About Me Image">
+    </div>
+</div>
+<div class="row">
+    <div class="about-col-1">
+        
+        <img src="images/semimg3.jpeg" alt="About Me Image">
+    </div>
+    <div class="about-col-2">
+        <p>
+            <strong>Understanding the Phases of Ethical Hacking </strong><br>
+            A key aspect of the seminar was an overview of the five phases of ethical hacking. These phases include reconnaissance, scanning, gaining access, maintaining access, and clearing tracks. Each step was explained to demonstrate how ethical hackers work systematically to identify vulnerabilities in a system, simulating real-world cyberattacks to strengthen defenses. This segment offered the audience a better understanding of how cybersecurity experts think and operate.
+        </p>
+    </div>
+</div>
+<div class="row">
+    
+    <div class="about-col-2">
+        <p>
+            <strong> Exploring Different Types of Cyberattacks</strong> <br>
+            In addition to ethical hacking, the seminar also shed light on various types of cyberattacks that individuals and organizations face today. Attendees learned about malware, phishing, password attacks, DDoS (Distributed Denial of Service) attacks, man-in-the-middle attacks, drive-by downloads, malvertising, and rogue software. Each type of attack was illustrated with examples, helping participants grasp their potential impact and the importance of adopting preventive measures.
+        </p>
+    </div>
+    <div class="about-col-1">
+        
+        <img src="images/semimg4.JPG" alt="About Me Image">
+    </div>
+</div>
+<div class="row">
+    <div class="about-col-1">
+        
+        <img src="images/semimg5.jpg" alt="About Me Image">
+    </div>
+    <div class="about-col-2">
+        <p>
+            <strong>Engagement and Impact </strong><br>
+            The seminar was well-received by the audience, with active participation and meaningful discussions throughout the session. Attendees were particularly engaged during the interactive segments, where we analyzed examples of phishing emails and explored ways to identify and avoid them. The positive feedback from both students and faculty reinforced the value of the session and highlighted the importance of promoting cybersecurity awareness.    
+        </p>
+    </div>
+</div>
+<div class="row">
+    
+    <div class="about-col-2">
+        <p>
+            <strong>A Rewarding Experience</strong> <br>
+            Leading this seminar was a deeply rewarding experience for me. It not only allowed me to share knowledge but also strengthened my resolve to contribute to the field of technology in meaningful ways. The event stands as a testament to my commitment to innovation and societal betterment, serving as a cornerstone in my journey toward making a difference in the world of cybersecurity.    
+        </p>
+    </div>
+    <div class="about-col-1">
+        
+        <img src="images/semimg6.jpg" alt="About Me Image">
+    </div>
+</div> -->
