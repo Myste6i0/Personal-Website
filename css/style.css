@@ -348,7 +348,29 @@ nav ul li a:hover::after{
     background: #063970;
 }
 
+@media (max-width: 768px) {
+    .layer {
+        height: 100%;
+        opacity: 0;
+        animation: fadeInOut 5s ease-in-out infinite alternate;
+    }
 
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Pause animation when user touches the .work element */
+    .work:active .layer {
+        animation-play-state: paused;
+    }
+}
 
 /* --------------contact------------- */
 .contact-left{
