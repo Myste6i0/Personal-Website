@@ -160,7 +160,7 @@ nav ul li a:hover::after{
     flex-basis: 35%; /* It means the width of the column will be 35% */
 }
 .about-col-1 p,li{
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .about-col-1 img{
     width: 100%;
@@ -172,7 +172,7 @@ nav ul li a:hover::after{
 }
 .about-col-2 p{
     font-size: large;
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .sub-title{
     font-size: 60px;
