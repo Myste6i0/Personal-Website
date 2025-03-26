@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+
+
+
+.container{
+    padding: 10px 10%;
+}
+
+
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: large;
+}
+.about-col-1{
+    flex-basis: 35%; /* It means the width of the column will be 35% */
+}
+.about-col-1 p,li{
+    font-family: cursive;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    font-size: large;
+    font-family: cursive;
+}
+
+
