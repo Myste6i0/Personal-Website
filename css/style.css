@@ -105,7 +105,7 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: #063970;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7);
 }
 
 /* Enhanced Call-to-action Button */
